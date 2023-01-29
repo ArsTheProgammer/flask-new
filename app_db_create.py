@@ -8,7 +8,7 @@ text TEXT NOT NULL
 );
 """
 # Подключение в БД
-connection = sqlite3.connect("testdatabase.db")
+connection = sqlite3.connect("test.db")
 
 # Создаем cursor, он позволяет делать SQL-запросы
 cursor = connection.cursor()
@@ -37,7 +37,7 @@ VALUES
 """
 
 # Подключение в БД
-connection = sqlite3.connect("testdatabase.db")
+connection = sqlite3.connect("test.db")
 
 # Создаем cursor, он позволяет делать SQL-запросы
 cursor = connection.cursor()
@@ -58,7 +58,7 @@ connection.close()
 select_quotes = "SELECT * from quotes"
 
 # Подключение в БД
-connection = sqlite3.connect("testdatabase.db")
+connection = sqlite3.connect("test.db")
 
 # Создаем cursor, он позволяет делать SQL-запросы
 cursor = connection.cursor()
