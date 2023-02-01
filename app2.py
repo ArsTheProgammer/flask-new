@@ -5,7 +5,7 @@ from flask import g
 from pathlib import Path
 
 BASE_DIR = Path(__file__).parent
-DATABASE = BASE_DIR / "testdatabase.db"
+DATABASE = BASE_DIR / "test.db"
 
 app = Flask(__name__)
 app.config['JSON_AS_ASCII'] = False
